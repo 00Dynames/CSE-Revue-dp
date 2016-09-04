@@ -4,33 +4,25 @@
 	<head>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="myScript.js"></script>
-		<title>Create DP</title>
+		<title>ST*R WARS: A new DP</title>
 	</head>	
 
-	<body> 
-        
-        
+	<body bgcolor=black> 
 
-        <div>
-            <canvas id="canvas" height=300 width=300></canvas>
-        </div>
-		
-		<div>
-            <label> Upload image to convert </label>
-            <p> <p>
-        </div>
-		
-		<div>
+		<div align=center>
+            <label><font color=white face=arial> Upload image to convert </font></label>
             <input type="file" id="imgName"> </input>
+            <input type="checkbox" id="chkOpaq"><font color=white face=arial>Opacity</font></input>
             <button type="button" onclick="createDP()">Create</button>
-            <input type="checkbox" id="chkOpaq">Opacity</input>
         </div>
-        
+        <hr>				
+		<div align=center>
+			<img id="img1" width=300 height=300 crossOrigin="anonymous" src=# border=5 style="border-color:white"> </img>
+    	    <canvas id="canvas" height=300 width=300></canvas>
+			<img id ="img2" width=300 height=300 crossOrigin="anonymous" src="logoyellow.png" border=5 style="border-color:white"></img>
+		</div>
 
-        <img id="img1" width=300 height=300 crossOrigin="anonymous" src=#> </img>
-        <img id ="img2" width=300 height=300 crossOrigin="anonymous" src="logoyellow.png"> </img>
-        
+		
 
 	</body>
-
 </html>
